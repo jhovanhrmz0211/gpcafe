@@ -2,6 +2,13 @@ function MainMenu() {
     return ( 
         <div className="container-menu">
             <h2>Menú</h2>
+            <div className="containe-catalogo">
+              <div className="nav">
+                <a href="#">Desayunos</a>
+                <a href="#">Comida</a>
+                <a href="#">Bebidas</a>
+                </div>
+            </div>
 
             {/* <section>
           <h2>Menu</h2>

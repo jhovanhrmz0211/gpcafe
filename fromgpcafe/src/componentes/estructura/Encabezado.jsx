@@ -2,7 +2,7 @@ function Encabezado() {
   return (
     <header className='head'>
       <div className='contenedor-nav'>
-        <h1 className="titulo">café à la fleur de lavande</h1>
+        <h1 className="titulo">Café à la fleur de lavande</h1>
         <nav className="nav">
           <a href="#">Menu</a>
           <a href="#">Fotos</a>

@@ -27,8 +27,10 @@
     border-radius: 4px;
 }
 .contenedor-nav .titulo {
+  font-family: 'Roboto';
+  font-weight: 700;
   margin: 5px 0;
-  font-size: 1.8em;
+  font-size: 2.2em;
   font-weight: 900;
   color: white;
 }
@@ -41,11 +43,10 @@
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
-  /* transition: ease .2s .1s; */
+  transition: all 0.3s ease;
 }
 .contenedor-nav .nav a:hover {
   border-color: #d8af55;
-  transition: all 0.3s ease;
 }
 
 .main {
@@ -60,6 +61,21 @@
   height: 550px;
 }
 .container-menu h2 {
-  font-size: 1.5em;
-  font-weight: 600;
+  margin-top: 10px;
+  font-family: 'Libre Baskerville';
+  color: white;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 400;
+}
+.container-menu .nav a {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.container-menu .nav a:hover {
+  border-color: #d8af55;
 }
