@@ -1,3 +1,4 @@
+@import "tailwindcss";
 * {
   margin: 0;
   padding: 0;
@@ -53,29 +54,82 @@
   width: 100%;
   position: absolute;
   margin-top: 574px;
+  background-color: #ccacdc;
 }
-.container-menu {
+.main .main-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 550px;
 }
-.container-menu h2 {
+.main .main-menu h2 {
   margin-top: 10px;
   font-family: 'Libre Baskerville';
-  color: white;
-  font-size: 2em;
+  font-size: 2.2em;
   font-style: italic;
   font-weight: 400;
 }
-.container-menu .nav a {
+.main .main-menu .menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .main-menu .menu-container .nav a {
   padding: 5px;
-  color: white;
   text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 2px;
+  background-color: transparent;
   transition: all 0.3s ease;
 }
-.container-menu .nav a:hover {
-  border-color: #d8af55;
+.main .main-menu .menu-container .nav a:hover {
+  border-radius: 9px 9px 0 0;
+  background-color: #fff;
+}
+.main .main-menu .menu-container .menu {
+  width: 95%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.main .main-menu .menu-container .menu .menu-descripcion {
+  width: 75%;
+  margin: 10px auto;
+  padding: 5px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  position: relative;
+  border-left: 2px solid #d8af55;
+  border-right: 2px solid #d8af55;
+}
+.main .main-menu .menu-container .menu .menu-descripcion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background-color: #d8af55;
+}
+.main .main-menu .menu-container .menu .menu-descripcion::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 2px;
+  background-color: #d8af55;
+}
+.main .main-menu .menu-container .menu .menu-descripcion h3 {
+  font-family: 'Roboto';
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.main .main-menu .menu-container .menu .menu-descripcion .datos {
+  width: 99%;
+  display: flex;
+  font-size: .9rem;
+  gap: 9px;
+  font-family: 'Libre Baskerville';
+  font-weight: 500;
+  justify-content: space-between;
 }

@@ -1,13 +1,13 @@
 import "./App.css";
-import Encabezado from "./componentes/estructura/Encabezado";
-import MainMenu from "./componentes/estructura/Menu";
+import Encabezado from "./componentes/estructura/Encabezado.jsx";
+import MainMenu from "./componentes/estructura/Menu.jsx";
 function App() {
   return (
     <>
       <Encabezado></Encabezado>
-      <main className="main bg-purple-400">
+      <main className="main">
         <MainMenu></MainMenu>
-        <section>
+        {/* <section>
           <h2>Reserva</h2>
           <form>
             <label>Fecha y Hora:</label>
@@ -25,7 +25,7 @@ function App() {
         </section>
         <section id="ea">
           <h3>aa</h3>
-        </section>
+        </section> */}
       </main>
     </>
   );
